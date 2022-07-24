@@ -1,0 +1,249 @@
+body{
+
+    background-image: url(./img/space-nebula.jpg);
+    color: white;
+    margin-bottom: 0%;
+    min-height: 700px;
+    text-align: center;
+}
+
+h1{                   /*headings of all pages*/
+    font-family: fantasy;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+
+/* -----------------about page----------- */
+.details {
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    padding: 5px;
+    background-color:transparent; 
+    margin: 20px;
+}
+  
+.me {          /*my photo*/
+    border-radius: 100%;
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+.logo {           /*icon link to mail and facebook*/
+    border-radius: 50%;
+    width: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2{                   /*Sub-headings of about page*/
+    margin: 0%;
+}
+
+/* -----------------bar line----------- */
+
+.bar-buttons{
+    margin: 8px;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.search-input{
+    border: 2px solid red;
+    border-radius: 25px;
+    margin-right: 30%;
+    text-align: center;
+    color: black;
+}
+
+.sticky {
+    background-color: rgb(167, 14, 14);
+	position: sticky;
+	top: 0;
+}
+
+/* -----------------home page----------- */
+
+#imgUp{
+    background-image: url(./img/crypto-background.jpg);
+    height: 400px;
+    max-width: 1000px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.coin-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.warning{
+    text-align: left;
+}
+
+/* -----------------coin-card----------- */
+
+
+.coin-Card{
+    display:inline-block;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 150px;
+    min-height: 155px;
+    border: solid black 3px;
+    background-color: rgb(167, 14, 14);
+    opacity: 80%;
+    color: white;
+    animation-name: animation;
+    animation-duration: 3s;
+}
+
+.coin-name{
+    text-align: center;
+    font-size: larger;
+    display:block;
+}
+
+.coin-symbol{
+    display:inline-block;
+    text-align: left;
+    width: 95px;
+}
+.more-info{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(131, 6, 6);
+}
+
+.data_market{
+    animation-name: animation;
+    animation-duration: 3s;
+}
+
+@keyframes animation {
+    0%   {left: -0px; top:-80px; opacity: 0;}
+    100% { left: 0px; top:0px; opacity: 1;}
+}
+
+
+/* -----------------switch in coin-card----------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 17px;
+    margin-top: -30px;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*---------------------Modal-------------------*/
+
+#myModal{
+    background-image:url(./img/poptin.jpg) ;
+    margin: auto;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.modal-header{
+    height: 50px;
+    color:black;
+}
+h6{
+    display: inline-block;
+    width: 275px;
+    font-size: 22px;
+}
+
+.modal-list{
+    text-align: right;
+    display:block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 16px;
+    width: 350px;
+    height: 60px;
+    border: solid black 3px;
+    background-color: rgb(167, 14, 14);
+    opacity: 90%;
+    color: white;
+}
+
+.coin-body{
+    display: inline-block;
+    text-align: left;
+    width: 280px;
+    font-size: large;
+}
+
+#saveBtn{
+border-radius: 25px;
+margin-left: 40%;
+margin-right: 40%;
+}
+
+
+
+  /* -----------------live-report page----------- */
+
+ /* All settings come understood from the site so there are no changes  */
+
+
